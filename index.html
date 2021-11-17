@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email" />
-  <input type="submit" />
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
@@ -48,7 +45,6 @@
   </head>
   <body>
     <h3>Contact Form</h3>
-
     <div class="form-example">
       <div class="form-example">
         <label for="firstName">First Name</label>
@@ -121,7 +117,7 @@
       btn.addEventListener(
         "click",
         (submitFunc = () => {
-          var firstname = document.getElementById("firstName").value || "";
+          var firstname = document.getElementById("firstName").value;
           var lastname = document.getElementById("lastName").value;
           var email = document.getElementById("email").value;
           var phone = document.getElementById("phone").value;
